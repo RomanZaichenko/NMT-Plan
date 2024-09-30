@@ -290,7 +290,7 @@ button:hover::before {
 @media (max-width: 769px) {
 
   .wrapper {
-    min-height: 930px;
+    min-height: 980px;
   }
 
   .content {
@@ -322,7 +322,7 @@ button:hover::before {
 
 @media (max-width: 635px) {
   .wrapper {
-    min-height: 970px;
+    min-height: 1020px;
   }
 }
 
@@ -335,7 +335,7 @@ button:hover::before {
 
 @media (max-width: 460px) {
   .wrapper {
-    min-height: 1000px;
+    min-height: 1050px;
   }
 }
 
