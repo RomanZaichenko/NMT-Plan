@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NMT Plan</title>
+  <link rel="shortcut icon" type="image/jpg" href="src/images/favicon.jpg"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="src/styles/nulling.css">
+  <link rel="stylesheet" href="src/styles/index.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <img src="src/images/logo-no-background.png" alt="logo">
+    </header>
+    <div class="content">
+      <main>
+      <h1>Створення індивідуального плану підготовки до НМТ на замовлення</h1>
+      <details>
+        <summary id="spoiler">Більше інформації</summary>
+        2 роки тому, я сам складав НМТ, готуючись по власному плану. Зараз я навчаюсь на бюджеті в одному з найкращих університетів країни, а саме в КПІ. Ви можете так само.
+      </details>
+  
+      <h2>Заповніть форму для того, щоб отримати план підготовки</h2>
+    </main>
+  
+    <section>
+      <form action="https://api.web3forms.com/submit" method="post" >
+        <input type="hidden" name="access_key" value="cebbd60a-e7fe-4a91-813a-c255dddac284">
+
+        <input type="text" name="name" placeholder="Ім'я" autocomplete="off"/>
+        <input type="email" name="email" placeholder="Електронна пошта" autocomplete="off" required />
+        <div class="subjects">
+          <p>Предмети</p>
+          <div class="subjects-item language">
+            <input type="checkbox" id="language" name="language" />
+            <label for="language">Українська мова</label>
+          </div>
+
+          <div class="subjects-item">
+            <input type="checkbox" id="maths" name="maths" />
+            <label for="maths">Математика</label>
+          </div>
+
+          <div class="subjects-item">
+            <input type="checkbox" id="history" name="history" />
+            <label for="history">Історія</label>
+          </div>
+        </div>
+  
+        <label id="time" for="time">Скільки часу на день готові присвячувати підготовці?(в годинах)</label>
+        <input type="text" name="time" autocomplete="off" required />
+  
+        <fieldset>
+          <legend>Бали</legend>
+          <p>Для створення найоптимальнішого для Вас плану, пройдіть подані нижче тести</p>
+  
+          <label for="language-score"><a id = "language-link" href="https://zno.osvita.ua/ukrainian/568/" target="_blank">Українська мова</a></label>
+          <input type="text" name="language-score" autocomplete="off" disabled>
+  
+          <label for="maths-score"><a id = "maths-link" href="https://zno.osvita.ua/mathematics/570/" target="_blank">Математика</a></label>
+          <input type="text" name="maths-score" autocomplete="off" disabled>
+  
+          <label for="history-score"><a  id = "history-link" href="https://zno.osvita.ua/ukraine-history/571/" target="_blank">Історія</a></label>
+          <input type="text" name="history-score" autocomplete="off" disabled>
+        </fieldset>
+        <button id="submitButton">Підтвердити</button>
+      </form>
+    </section>
+    </div>
+  </div>
+
+  <script src="src/js/index.js"></script>
+</body>
+</html>
